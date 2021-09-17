@@ -1,16 +1,12 @@
 
 
 export const translateToMorse = (a) => {
-  
-  if (a.length <=1 ){
-    const lower = a.toLowerCase();
-    const value =  englishAlphabet.indexOf(lower);
-    const morseValue = morseAlphabet[value]
-    return morseValue;
+    if (format.test(a)) {
+    return ("Not a valid morse code character!")
+    
   }
-
-  else if (a.length >=2 ){
-    const morseArray = []
+else {
+  const morseArray = []
     const stringAsArray = Array.from(a.toLowerCase());
   
     stringAsArray.forEach(letter => { 
@@ -19,21 +15,33 @@ export const translateToMorse = (a) => {
     });
     
     const arrayAsString = morseArray.join(" ")
-    console.log(arrayAsString)
     return arrayAsString;
-    
-  }
+}
+}
 
-};
 
 
 
 export const translateToEnglish = (char) => {
-  const morseValue =  morseAlphabet.indexOf(char);
-  const value = englishAlphabet[morseValue]
-  return value;
+  
+  const englishArray = []
+  const morseAsArray =  char.split(" ");
+  
+  morseAsArray.forEach(character => {
+      const charValue = morseAlphabet.indexOf(character);
+      englishArray.push(englishAlphabet[charValue])
+    
+     
+  });
+
+  const arrayAsString = englishArray.join("")
+  return arrayAsString;
   
 };
+
+
+const format = /[@$%*]+/;
+
 
 const englishAlphabet = [
   'a',

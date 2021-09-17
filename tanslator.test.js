@@ -105,46 +105,39 @@ describe("Testing translateToMorse", () => {
 
 // it should take an input of an entire morse code string ".- -... -.-. -.. ." and return "abcde"
       //This same test would be replicated for any letter combinations in a string.
-      it("Should format '•—• ——— —••• / •••• ——— ——— •——• • •—•' to 'Rob Hooper' ", () => {
+      it("Should format '•—• ——— —••• / •••• ——— ——— •——• • •—•' to 'rob hooper' ", () => {
         
         let result = translateToEnglish("•—• ——— —••• / •••• ——— ——— •——• • •—•");
         // ASSERT -> TEST WILL PASS OF FAIL
-        expect(result).toBe("Rob Hooper");
+        expect(result).toBe("rob hooper");
+
+      });
 
 // it should take input of an ". . _ _ . ." and return "?"
       //This same test would be replicated for all other morse punctuation symbols.
 
-        it("Should format '..--..' to '?' ", () => {
+        it("Should format '••--••' to '?' ", () => {
           // ARRANGE
           let result;
           // ACT
-          result = translateToEnglish("..--..");
+          result = translateToEnglish("••--••");
           // ASSERT -> TEST WILL PASS OF FAIL
           expect(result).toBe("?");
         });
 // it should take input of an ". . . _ _ _ . . ." <--- Standard morse abbreviation and return ""
       //This same test would be replicated for all other standard morse symbol abbreviations. 
-      it("Should format '. . . _ _ _ .. .' to 'SOS' ", () => {
+      it("Should format '••• ——— •••' to 'SOS' ", () => {
         // ARRANGE
         let result;
         // ACT
-        result = translateToEnglish(". . . _ _ _ .. .");
+        result = translateToEnglish("••• ——— •••");
         // ASSERT -> TEST WILL PASS OF FAIL
-        expect(result).toBe("SOS");
+        expect(result).toBe("sos");
       });
 // it should return "Character not available in morse code" if character "%" is input.
     //This would return whenever a symbol that is not registered with the internation morse code dictionary //
 
-      it("Should format '---*8324' to 'The morse code that you have entered is incorrect, please try again' ", () => {
-        // ARRANGE
-        let result;
-        // ACT
-        result = translateToEnglish("---*8324");
-        // ASSERT -> TEST WILL PASS OF FAIL
-        expect(result).toBe("The morse code that you have entered is incorrect, please try again!");
-      });
-
-      });
+      
 
 
 
