@@ -11,12 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
+  <main class="translator">
     <textarea class="englishInput" placeholder="Type your English to be translated here"></textarea>
-    <div>
-      <button class="translator__buttonEnglish translator__button">From English to Morse Code &darr;</button>
+    <div class="translator__buttons">
+      <button class="translator__buttonEnglish translator__button">English to Morse Code &darr;</button>
       <button class="btn-reset translator__button">Reset</button>
-      <button class="translator__buttonMorse translator__button">From Morse Code to English &uarr;</button>
+      <button class="btn-play translator__button ">Play it out loud!</button>
+      <button class="translator__buttonMorse translator__button">Morse Code to English &uarr;</button>
     </div>
     <textarea class="morseOutput" placeholder="Type your Morse Code to be translated here"></textarea>
   </main>
@@ -36,5 +37,6 @@
     </div>
   </div> -->
   <script src="./script/main.js"></script>
+  <script src="./script/morseSynth.js"></script>
 </body>
 </html>

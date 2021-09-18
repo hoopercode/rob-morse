@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "This is my translator from English to Morse and vice versa",
   "main": "tanslator.test.js",
-  "dependencies": {},
+  "dependencies": {
+    "morse-decoder": "^3.0.1",
+    "morsify": "^2.4.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
