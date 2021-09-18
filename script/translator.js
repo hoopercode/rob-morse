@@ -1,5 +1,3 @@
-
-
 export const translateToMorse = (a) => {
     if (format.test(a)) {
     return ("Not a valid morse code character!")
@@ -38,6 +36,8 @@ export const translateToEnglish = (char) => {
   return arrayAsString;
   
 };
+
+
 
 
 const format = /[@$%*]+/;

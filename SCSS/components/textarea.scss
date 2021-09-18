@@ -1,0 +1,38 @@
+.englishInput {
+  width: 400px;
+  height: 250px;
+  padding: 5px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-shadow: -23px 0px 5px rgba(66,66,66,.0);
+  text-align: center;
+  border-radius: 20px;
+}
+.englishInput:focus {
+  outline:none;
+}
+
+.morseOutput{
+  width: 400px;
+  height: 250px;
+  padding: 5px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-shadow: -23px 0px 5px rgba(66,66,66,.0);
+  border-radius: 20px;
+}
+.morseOutput:focus {
+  outline:none;
+}

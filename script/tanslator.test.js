@@ -101,7 +101,7 @@ describe("Testing translateToMorse", () => {
         // ASSERT -> TEST WILL PASS OF FAIL
         expect(result).toBe("1");
       });
-      });
+      
 
 // it should take an input of an entire morse code string ".- -... -.-. -.. ." and return "abcde"
       //This same test would be replicated for any letter combinations in a string.
@@ -134,12 +134,9 @@ describe("Testing translateToMorse", () => {
         // ASSERT -> TEST WILL PASS OF FAIL
         expect(result).toBe("sos");
       });
-// it should return "Character not available in morse code" if character "%" is input.
-    //This would return whenever a symbol that is not registered with the internation morse code dictionary //
+    
 
-      
-
-
+  });
 
 
 
