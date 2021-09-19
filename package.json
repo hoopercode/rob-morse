@@ -4,6 +4,7 @@
   "description": "This is my translator from English to Morse and vice versa",
   "main": "tanslator.test.js",
   "dependencies": {
+    "aos": "^2.3.4",
     "morse-decoder": "^3.0.1",
     "morsify": "^2.4.0"
   },

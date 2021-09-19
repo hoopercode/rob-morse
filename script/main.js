@@ -1,3 +1,4 @@
+
 const format = /[@$%*]+/; 
 const englishAlphabet = [
 'a',
@@ -107,20 +108,28 @@ const buttonFromEnglish = document.querySelector('.translator__buttonEnglish');
 const buttonFromMorse = document.querySelector('.translator__buttonMorse');
 const buttonReset = document.querySelector('.btn-reset');
 const buttonPlay = document.querySelector('.btn-play');
+const boxTypewriter = document.getElementsByClassName('.typewriter')
+
 
 
 
 //event listeners
 
 buttonFromEnglish.addEventListener(('click'), () => translateToMorse());
+buttonFromEnglish.addEventListener(('click'), () => addToType());
+
 buttonFromMorse.addEventListener(('click'), () => translateToEnglish());
 buttonReset.addEventListener(('click'), () => reset());
 buttonPlay.addEventListener(('click'), () => play());
+
+
+
 
 const translateToMorse = () => {
   
 if (format.test(boxEnglish.value)) {
   boxMorse.value = incorrectInput
+  
   
 }
 else {
@@ -134,6 +143,7 @@ const morseArray = []
   
   const arrayAsString = morseArray.join(" ")
   boxMorse.value = arrayAsString;
+  
 
 }
 }
@@ -156,10 +166,13 @@ morseAsArray.forEach(character => {
 const arrayAsString = englishArray.join("");
 boxEnglish.value = arrayAsString;
 
+
+
 };
 
+
 const play = () => {
-  var morse = new morseSynth();
+  let morse = new morseSynth();
   morse.play(boxEnglish.value);
 
   // boxEnglish.value = "";
