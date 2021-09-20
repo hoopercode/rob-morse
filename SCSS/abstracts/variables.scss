@@ -1,0 +1,28 @@
+// Small tablets and large smartphones (landscape view)
+$screen-small: 576px;
+
+
+// Large tablets and desktops
+$screen-large: 1200px;
+
+
+// Small devices
+@mixin iphone {
+  @media (max-width: #{$screen-small}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin laptop {
+  @media (min-width: #{$screen-large}) {
+      @content;
+  }
+}
+
+
+$bgOne: #274690;
+$bgTwo: #576CA8;
+$black: #302B27;
+$white: #F5F3F5;
+$otherColor: #1B264F;

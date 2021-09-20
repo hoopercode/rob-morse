@@ -1,8 +1,6 @@
-$bgOne: #274690;
-$bgTwo: #576CA8;
-$black: #302B27;
-$white: #F5F3F5;
-$otherColor: #1B264F;
+@use "../abstracts/variables.scss" as *;
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web&display=swap');
 
@@ -41,6 +39,10 @@ justify-content: center;
 .translator h1 {
 font-family: $fontHeader;
 font-size: 50px;
+
+@include iphone {
+  font-size: 30px;
+}
 }
 
 #subheading {
@@ -59,8 +61,12 @@ font-size: 50px;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+// 576px window width and less
+@include iphone {
+  font-size: 30px;
+}
 }
 
 /* The typing effect */

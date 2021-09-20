@@ -28,6 +28,11 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: 50px;
 }
+@media (max-width: 576px) {
+  .translator h1 {
+    font-size: 30px;
+  }
+}
 
 #subheading {
   font-family: "Titillium Web", sans-serif;
@@ -50,6 +55,11 @@ body {
   letter-spacing: 0.15em;
   /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+@media (max-width: 576px) {
+  .typewriter__output {
+    font-size: 30px;
+  }
 }
 
 /* The typing effect */

@@ -13,14 +13,14 @@ const buttonPlay = document.querySelector('.btn-play');
 //event listeners
 
 buttonFromEnglish.addEventListener(('click'), () => translateToMorse(boxEnglish));
-buttonFromEnglish.addEventListener(('click'), () => colors());
+// buttonFromEnglish.addEventListener(('click'), () => colors());
 buttonFromMorse.addEventListener(('click'), () => translateToEnglish(boxMorse));
 buttonReset.addEventListener(('click'), () => reset());
 buttonPlay.addEventListener(('click'), () => play());
 
 
 
-//Function - English to Morse
+//Function - English to Mors
 
 const translateToMorse = (string) => {
 const incorrectInput = "Not a valid morse code character!"
