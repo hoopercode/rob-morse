@@ -1,5 +1,7 @@
 
-export const format = /[@$%*]+/; 
+export const format = /[@$%*^]+/; 
+
+
 export const englishAlphabet = [
 'a',
 'b',
