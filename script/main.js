@@ -37,6 +37,8 @@ const morseArray = []
 }
 }
 //Function - Morse to English 
+
+
 const translateToEnglish = (string) => {
 let validInput = /•—/i
 if (validInput.test(string.value)) {
